@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos globales */
+
+/* Header */
+.navegacion {
+    background-color: rgb(31, 31, 31);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.hamburguesa {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+    /* filter: invert(1); */
+    display: none;
+    z-index: 2;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navItem {
+    display: flex;
+    gap: 6rem;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+/* Contenido principal */
+
+#portada {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/cafeportada.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contenedorTitulo {
+    position: absolute;
+    top: 15rem;
+    left: 6.2rem;
+    width: 60%;
+}
+
+.tituloPrincipal {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.boton {
+    text-decoration: none;
+    padding: 1rem 3.5rem;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+
+.botonBlanco {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.botonNegro {
+    border: 1px solid black;
+    color: black;
+}
+
+.caja {
+    display: flex;
+    /* height: 40rem; */
+}
+
+.cajaInvertida {
+    flex-direction: row-reverse;
+}
+
+.cajaArticulo {
+    width: 50%;
+    padding: 3rem;
+    margin: auto 0;
+}
+
+.contenedorImagen {
+    width: 50%;
+}
+
+.contenedorImagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tituloArticulo {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.parrafoArticulo {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+#lugar {
+    background-color: #ebebeb;
+    padding: 5rem 0;
+}
+
+.tituloSecundario {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.padreLugar {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.lugarDato {
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 35%;
+}
+
+.tituloTerciario {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.imagenesSeparador {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.separador img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: rgb(31, 31, 31);
+    padding: 5rem 0;
+    color: white;
+}
+
+.footerContenedor {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.listaFooter {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.footLink {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+}
+
+.parrafoPortada {
+    font-size: 2rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#portadaSecundaria {
+    padding: 10rem 0;
+    background-color: rgb(243, 243, 243);
+    color: #5f5e5e;
+}
+
+/* Nosotros */
+
+.seccionNosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nosotrosContenido {
+    width: 50%;
+    position: relative;
+    padding: 13rem 6rem;
+    text-align: center;
+}
+
+.nosotrosContenidoImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotrosContenido p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.imagen {
+    width: 55%;
+    height: 70%;
+    position: absolute;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagen1 {
+    left: 3rem;
+    top: 3rem;
+}
+
+.imagen2 {
+    right: 3rem;
+    bottom: 3rem;
+}
+
+.imagen3 {
+    right: 3rem;
+    top: 3rem;
+}
+
+.imagen4 {
+    left: 3rem;
+    bottom: 3rem;
+}
+
+/* Galería */
+
+.galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos Mobile */
+
+@media (max-width: 600px) {
+
+    .navItem {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background-color: rgb(31, 31, 31);
+        text-align: center;
+        display: none;
+    }
+
+    .mostrar {
+        display: flex;
+    }
+
+    .navLink {
+        font-size: 2.5rem;
+    }
+
+    .hamburguesa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: .5rem;
+        right: 1rem;
+    }
+
+    .hamburguesa > div {
+        height: 2px;
+        width: 80%;
+        background-color: white;
+    }
+
+    #portada {
+        height: 70vh;
+    }
+
+    .contenedorTitulo {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    .tituloPrincipal {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .caja {
+        flex-direction: column;
+    }
+
+    .cajaArticulo {
+        width: 100%;
+    }
+
+    .contenedorImagen {
+        width: 100%;
+    }
+
+    .parrafoArticulo {
+        font-size: 1.6rem;
+    }
+
+    .padreLugar {
+        flex-direction: column;
+        
+    }
+
+    .lugarDato {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .tituloSecundario {
+        font-size: 3rem;
+    }
+
+    .tituloTerciario {
+        font-size: 2.5rem;
+    }
+
+    .imagenesSeparador {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .footerContenedor {
+        width: 100%;
+    }
+
+    .listaFooter {
+        gap: 1rem;
+    }
+
+    .footLink {
+        font-size: 1.5rem;
+    }
+}

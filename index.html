@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>MiCafé</title>
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <header class="navegacion">
+        <a class="logo" href="index.html">MiCafé</a>
+        <div class="hamburguesa" id="hamburguesa">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul class="navItem" id="navItem">
+                <li><a class="navLink" href="#">Inicio</a></li>
+                <li><a class="navLink" href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a class="navLink" href="./pages/menu.html">Menú</a></li>
+                <li><a class="navLink" href="./pages/galeria.html">Galería</a></li>
+                <li><a class="navLink" href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Contenido principal-->
+    <main>
+        <section id="portada">
+            <div class="contenedorTitulo">
+                <h1 class="tituloPrincipal">Tu lugar para disfrutar de un delicioso café</h1>
+                <a class="boton botonBlanco" href="./pages/menu.html">Menú</a>
+            </div>
+        </section>
+        <section>
+            <div class="caja">
+                <article class="cajaArticulo">
+                    <h2 class="tituloArticulo">Título 1</h2>
+                    <p class="parrafoArticulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia eius
+                        sit necessitatibus
+                        temporibus, similique fuga!</p>
+                    <a class="boton botonNegro" href="./pages/nosotros.html">Ver más</a>
+                </article>
+                <div class="contenedorImagen">
+                    <img src="./images/cafehelado.jpg" alt="Foto de la cafetería">
+                </div>
+            </div>
+            <div class="caja cajaInvertida">
+                <article class="cajaArticulo">
+                    <h2 class="tituloArticulo">Título 2</h2>
+                    <p class="parrafoArticulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia eius
+                        sit necessitatibus
+                        temporibus, similique fuga!</p>
+                    <a class="boton botonNegro" href="./pages/galeria.html">Ver más</a>
+                </article>
+                <div class="contenedorImagen">
+                    <img src="./images/reunioncafe.jpg" alt="Foto de la cafetería">
+                </div>
+            </div>
+            <div class="caja">
+                <article class="cajaArticulo">
+                    <h2 class="tituloArticulo">Título 3</h2>
+                    <p class="parrafoArticulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia eius
+                        sit necessitatibus
+                        temporibus, similique fuga!</p>
+                    <a class="boton botonNegro" href="./pages/contacto.html">Ver más</a>
+                </article>
+                <div class="contenedorImagen">
+                    <img src="./images/cafetería.jpg" alt="Foto de la cafetería">
+                </div>
+            </div>
+        </section>
+        <section id="lugar">
+            <h2 class="tituloSecundario">Te estamos esperando</h2>
+            <div class="padreLugar">
+                <div class="lugarDato">
+                    <h3 class="tituloTerciario">Dirección</h3>
+                    <p>Av. Siempre Viva 742</p>
+                    <p>Springfield-New Jersey</p>
+                </div>
+                <div class="lugarDato">
+                    <h3 class="tituloTerciario">Horarios</h3>
+                    <p>Lunes a Viernes: 8hs a 22hs</p>
+                    <p>Sábado y Domingo: 8hs a 14hs</p>
+                </div>
+            </div>
+        </section>
+        <section class="imagenesSeparador">
+            <div class="separador">
+                <img src="./images/cafemesa_640.jpg" alt="Foto de la cafetería">
+            </div>
+            <div class="separador">
+                <img src="./images/molido.jpg" alt="Foto de la cafetería">
+            </div>
+            <div class="separador">
+                <img src="./images/cafepastel.jpg" alt="Foto de la cafetería">
+            </div>
+            <div class="separador">
+                <img src="./images/chemex.jpg" alt="Foto de la cafetería">
+            </div>
+        </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <div class="footerContenedor">
+            <ul class="listaFooter">
+                <li><a class="footLink" href="#">Email</a></li>
+                <li><a class="footLink" href="#">Telegram</a></li>
+                <li><a class="footLink" href="#">Twitter</a></li>
+                <li><a class="footLink" href="#">Facebook</a></li>
+            </ul>
+            <p>Mi Café 2023-Todos los derechos reservados</p>
+            <p>Diseño y desarrollo Stella Maris Wilms</p>
+        </div>
+    </footer>
+
+    <script src="./js/hamburguesa.js"></script>
+</body>
+
+</html>
