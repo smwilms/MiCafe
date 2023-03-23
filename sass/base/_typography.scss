@@ -1,0 +1,72 @@
+.tituloPrincipal {
+    font-size: 5rem;
+    color: $color-blanco;
+    margin-bottom: 3rem;
+    animation-name: mover-titulo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+    @media (max-width: 600px) {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.tituloArticulo {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.parrafoArticulo {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    @media (max-width: 600px) {
+        font-size: 1.6rem;
+    }
+
+}
+
+.tituloSecundario {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+
+    @media (max-width: 600px) {
+        font-size: 3rem;
+    }
+}
+
+.tituloTerciario {
+    font-size: 3rem;
+    font-weight: 400;
+
+    @media (max-width: 600px) {
+        font-size: 2.5rem; 
+    }
+}
+
+.parrafoPortada {
+    font-size: 2rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menuItem {
+    color: $color-gris-medio-2;
+
+    &Titulo {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    &Descripcion {
+        font-size: 1.4rem;
+    }
+
+    &Precio {
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+}

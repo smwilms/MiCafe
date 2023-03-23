@@ -1,0 +1,68 @@
+.form {
+    display: grid;
+    grid-template-areas:    "nombre email"
+                            "mensaje mensaje"
+                            "boton .";
+    gap: 5rem;
+
+    @media (max-width: 600px) {
+        grid-template-areas:    "nombre nombre"
+                                "email email"
+                                "mensaje mensaje"
+                                "boton .";
+        gap: 2rem;
+    }
+    
+    fieldset {
+        border: none;
+    }
+
+    label {
+        display: block;
+        font-size: 2.2rem;
+        color: $color-gris-medio-2;
+        margin-bottom: 1rem;
+    }
+
+    input, textarea {
+        border: 1px solid $color-gris-medio-2;
+        border-radius: 2px;
+        padding: 1rem;
+        width: 100%;
+        color: $color-gris-medio-2;
+        font-size: 2rem;
+        resize: none;
+
+        @media (max-width: 600px) {
+            padding: .8rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    .botonEnviar {
+        grid-area: boton;
+        width: fit-content;
+        padding: 1.5rem 4rem;
+        color: $color-blanco;
+        border: none;
+        background-color: $color-gris-oscuro;
+        border-radius: 2px;
+
+        @media (max-width: 600px) {
+            padding: 1rem 3rem;
+        }
+    }
+    
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.email {
+    grid-area: email;
+}
+
+.mensaje {
+    grid-area: mensaje;
+}

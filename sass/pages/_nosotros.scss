@@ -1,0 +1,90 @@
+.seccionNosotros {
+    @include flex-between;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    &Invertida {
+
+        @media (max-width: 600px) {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.nosotrosContenido {
+    width: 50%;
+    position: relative;
+    padding: 13rem 6rem;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    
+    p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        color: $color-gris-medio-2;
+    }
+
+    &Imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 600px) {
+            justify-content: space-between;
+            padding: 0;
+        }
+    }
+}
+
+.imagen {
+    width: 55%;
+    height: 70%;
+    position: absolute;
+
+    @media (max-width: 600px) {
+        width: 50%;
+        height: 20rem;
+        position: initial;
+    }
+
+    img {
+        @include imagen-contenedor;
+    }
+}
+
+.imagen1 {
+    left: 3rem;
+    top: 3rem;
+
+    @media (max-width: 600px) {
+        width: 50%;
+        height: 20rem;
+    }
+}
+
+.imagen2 {
+    right: 3rem;
+    bottom: 3rem;
+
+    @media (max-width: 600px) {
+        width: 50%;
+        height: 20rem;
+    }
+}
+
+.imagen3 {
+    right: 3rem;
+    top: 3rem;
+}
+
+.imagen4 {
+    left: 3rem;
+    bottom: 3rem;
+}

@@ -1,0 +1,108 @@
+#portada {
+    height: 90vh;
+    background-image: linear-gradient(rgba($color-negro, .6), rgba($color-negro, .6)), url(../images/cafeportada.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @media (max-width: 600px) {
+        height: 70vh;
+    }
+}
+
+.contenedorTitulo {
+    position: absolute;
+    top: 15rem;
+    left: 6.2rem;
+    width: 60%;
+
+    @media (max-width: 600px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+}
+
+.caja {
+    display: flex;
+
+    &Invertida {
+        flex-direction: row-reverse;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+
+    &Articulo {
+        width: 50%;
+        padding: 3rem;
+        margin: auto 0;
+    
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.contenedorImagen {
+    width: 50%;
+
+    img {
+        @include imagen-contenedor;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+#lugar {
+    background-color: $color-gris-claro-2;
+    padding: 5rem 0;
+}
+
+.padreLugar {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+}
+
+}
+
+.lugarDato {
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 35%;
+
+    @media (max-width: 600px) {
+        width: 100%;
+        font-size: 2rem;
+    }
+}
+
+.imagenesSeparador {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.separador {
+    img {
+        @include imagen-contenedor;
+    }
+}

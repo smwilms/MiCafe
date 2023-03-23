@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#portadaSecundaria {
+    padding: 10rem 0;
+    background-color: $color-gris-claro;
+    color: $color-gris-medio;
+}

@@ -1,0 +1,21 @@
+.boton {
+    text-decoration: none;
+    padding: 1rem 3.5rem;
+    font-size: 1.4rem;
+    display: inline-block;
+
+    &Blanco {
+        background-color: transparent;
+        border: 1px solid $color-blanco;
+        color: $color-blanco;
+        animation-name: mostrar-boton;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: backwards;
+    }
+
+    &Negro {
+        border: 1px solid $color-negro;
+        color: $color-negro;
+    }
+}

@@ -1,0 +1,12 @@
+.galeria {
+    div {
+        img {
+            @include imagen-contenedor;
+            transition: filter .3s;
+            
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+    }
+}
