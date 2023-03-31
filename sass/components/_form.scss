@@ -1,18 +1,19 @@
 .form {
     display: grid;
-    grid-template-areas:    "nombre email"
-                            "mensaje mensaje"
-                            "boton .";
+    grid-template-areas: "nombre email"
+        "horario sucursales"
+        "mensaje mensaje"
+        "boton .";
     gap: 5rem;
 
     @media (max-width: 600px) {
-        grid-template-areas:    "nombre nombre"
-                                "email email"
-                                "mensaje mensaje"
-                                "boton .";
+        grid-template-areas: "nombre nombre"
+            "email email"
+            "mensaje mensaje"
+            "boton .";
         gap: 2rem;
     }
-    
+
     fieldset {
         border: none;
     }
@@ -24,7 +25,8 @@
         margin-bottom: 1rem;
     }
 
-    input, textarea {
+    input,
+    textarea {
         border: 1px solid $color-gris-medio-2;
         border-radius: 2px;
         padding: 1rem;
@@ -52,7 +54,13 @@
             padding: 1rem 3rem;
         }
     }
-    
+
+    .tituloHora {
+        font-size: 2.5rem;
+        color: $color-gris-oscuro;
+        font-weight: 400;
+    }
+
 }
 
 .nombre {
@@ -65,4 +73,32 @@
 
 .mensaje {
     grid-area: mensaje;
+}
+
+.horario {
+    grid-area: horario;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        display: inline;
+    }
+
+    input {
+        width: auto;
+        margin-right: 1rem;
+    }
+}
+
+.sucursales {
+    grid-area: sucursales;
+
+    select {
+        border: 1px solid $color-gris-medio-2;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        outline: transparent;
+        border-radius: 2px;
+
+    }
 }
