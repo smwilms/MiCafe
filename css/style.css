@@ -451,6 +451,13 @@ li {
   }
 }
 
+.error {
+  height: 100vh;
+  background-image: url(../images/error404.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .contacto {
   padding: 5rem;
 }
