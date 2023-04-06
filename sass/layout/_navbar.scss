@@ -11,11 +11,10 @@
     height: 4rem;
     background-color: $color-gris-oscuro;
     cursor: pointer;
-    /* filter: invert(1); */
     display: none;
     z-index: 2;
 
-    & > div {
+    &>div {
         height: 2px;
         width: 80%;
         background-color: $color-blanco;
@@ -46,6 +45,10 @@ li {
     display: flex;
     gap: 6rem;
 
+    @media (min-width: 601px) and (max-width: 900px) {
+        gap: 3rem;
+    }
+
     .navLink {
         color: $color-blanco;
         text-decoration: none;
@@ -71,7 +74,6 @@ li {
         display: none;
     }
 }
-
 
 .mostrar {
 

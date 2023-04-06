@@ -29,7 +29,6 @@ body {
     height: 4rem;
     background-color: rgb(31, 31, 31);
     cursor: pointer;
-    /* filter: invert(1); */
     display: none;
     z-index: 2;
 }
@@ -98,7 +97,6 @@ li {
 
 .caja {
     display: flex;
-    /* height: 40rem; */
 }
 
 .cajaInvertida {
@@ -319,7 +317,7 @@ footer {
         right: 1rem;
     }
 
-    .hamburguesa > div {
+    .hamburguesa>div {
         height: 2px;
         width: 80%;
         background-color: white;
@@ -360,7 +358,7 @@ footer {
 
     .padreLugar {
         flex-direction: column;
-        
+
     }
 
     .lugarDato {

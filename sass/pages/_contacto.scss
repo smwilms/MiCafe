@@ -1,5 +1,9 @@
 .contacto {
     padding: 5rem;
+
+    @media (max-width: 600px) {
+        padding: 5rem 3rem;
+    }
 }
 
 .mapa {
